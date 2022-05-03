@@ -15,6 +15,6 @@ def get_Images(filename1,filename2 ,url):
     return response.json()
   return f'Error - status code {response.status_code}'
 
-url = 'http://127.0.0.1:5000/classify_image' #change this url for the appropiate url
+url = 'http://127.0.0.1:5000/get_images' #change this url for the appropiate url
 images = get_Images('uploads/video1.mp4','uploads/video2.mp4', url)
 #After you receive the list of images you might need to decode the images
